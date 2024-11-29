@@ -4,18 +4,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
+   <!-- <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
-    <link rel="icon" type="image/x-icon" href="profil/logo.png">
+    <link rel="icon" type="image/x-icon" href="profil/logo.png"> -->
     <title>ART CENTER</title>
+
+    <style>
+        #root>.main-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  z-index: 100;
+  transition: .5s;
+}
+
+#root>.main-back>div {
+  width: 100%;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  transition: 4s;
+  z-index: -1;
+}
+
+#root>.main-back>div:nth-child(1) {
+  animation-name: div-1;
+}
+
+#root>.main-back>div:nth-child(2) {
+  animation-name: div-2;
+}
+
+#root>.main-back>div:nth-child(3) {
+  animation-name: div-3;
+}
+
+#root>.main-back>div:nth-child(4) {
+  animation-name: div-4;
+}
+
+#root>.main-back>div:nth-child(5) {
+  animation-name: div-5;
+}
+
+#root>.main-back>div:nth-child(6) {
+  animation-name: div-6;
+}
+
+#root>.main-back>div:nth-child(7) {
+  animation-name: div-7;
+}
+
+#root>.main-back>div:nth-child(8) {
+  animation-name: div-8;
+}
+
+#root>.main-back>div:nth-child(9) {
+  animation-name: div-9;
+}
+
+#root>.main-back>div:nth-child(10) {
+  animation-name: div-10;
+}
+
+#root>.main-back>div:nth-child(11) {
+  animation-name: div-11;
+}
+
+#root>.main-back>div:nth-child(12) {
+  animation-name: div-12;
+}
+
+#root>.main-back>div:nth-child(13) {
+  animation-name: div-13;
+}
+
+#root>.main-back>div:nth-child(14) {
+  animation-name: div-14;
+}
+
+#root>.main-back>div:nth-child(15) {
+  animation-name: div-15;
+}
+
+#root>.main-back>div:nth-child(16) {
+  animation-name: div-16;
+}
+
+#root>.main-back>div:nth-child(17) {
+  animation-name: div-17;
+}
+
+#root>.main-back>div:nth-child(18) {
+  animation-name: div-18;
+}
+
+
+
+@keyframes div-1 {
+  from {
+    background-color: rgb(92, 25, 174);
+  }
+
+  to {
+    background-color: rgb(30, 3, 62);
+  }
+}
+
+@keyframes div-2 {
+  from {
+    background-color: rgb(99, 39, 172);
+  }
+
+  to {
+    background-color: rgb(49, 15, 92);
+  }
+}
+
+@keyframes div-3 {
+  from {
+    background-color: rgb(134, 54, 231);
+  }
+
+  to {
+    background-color: rgb(83, 15, 166);
+  }
+}
+
+@keyframes div-4 {
+  from {
+    background-color: rgb(103, 96, 243);
+  }
+
+  to {
+    background-color: rgb(28, 6, 154);
+  }
+}
+
+@keyframes div-5 {
+  from {
+    background-color: rgb(15, 50, 127);
+  }
+
+  to {
+    background-color: rgb(60, 8, 124);
+  }
+}
+
+@keyframes div-6 {
+  from {
+    background-color: rgb(25, 82, 174);
+  }
+
+  to {
+    background-color: rgb(33, 12, 151);
+  }
+}
+
+@keyframes div-7 {
+  from {
+    background-color: rgb(30, 43, 178);
+  }
+
+  to {
+    background-color: rgb(11, 11, 213);
+  }
+}
+
+@keyframes div-8 {
+  from {
+    background-color: rgb(22, 86, 143);
+  }
+
+  to {
+    background-color: rgb(21, 55, 168);
+  }
+}
+
+@keyframes div-9 {
+  from {
+    background-color: rgb(36, 69, 215);
+  }
+
+  to {
+    background-color: rgb(28, 13, 145);
+  }
+}
+
+@keyframes div-10 {
+  from {
+    background-color: rgb(25, 47, 174);
+  }
+
+  to {
+    background-color: rgb(25, 22, 114);
+  }
+}
+
+@keyframes div-11 {
+  from {
+    background-color: rgb(92, 25, 174);
+  }
+
+  to {
+    background-color: rgb(46, 19, 143);
+  }
+}
+
+@keyframes div-12 {
+  from {
+    background-color: rgb(44, 23, 113);
+  }
+
+  to {
+    background-color: rgb(34, 9, 118);
+  }
+}
+
+@keyframes div-13 {
+  from {
+    background-color: rgb(92, 25, 174);
+  }
+
+  to {
+    background-color: rgb(36, 18, 84);
+  }
+}
+
+@keyframes div-14 {
+  from {
+    background-color: rgb(41, 11, 77);
+  }
+
+  to {
+    background-color: rgb(61, 30, 155);
+  }
+}
+
+@keyframes div-15 {
+  from {
+    background-color: rgb(92, 25, 174);
+  }
+
+  to {
+    background-color: rgb(47, 11, 92);
+  }
+}
+
+@keyframes div-16 {
+  from {
+    background-color: rgb(80, 20, 153);
+  }
+
+  to {
+    background-color: rgb(30, 3, 62);
+  }
+}
+
+@keyframes div-17 {
+  from {
+    background-color: rgb(75, 37, 121);
+  }
+
+  to {
+    background-color: rgb(49, 16, 89);
+  }
+}
+
+@keyframes div-18 {
+  from {
+    background-color: rgb(92, 25, 174);
+  }
+
+  to {
+    background-color: rgb(30, 3, 62);
+  }
+}
+
+
+    </style>
 </head>
 
 <body>
 
-    <section class="main">
+    <!--<section class="main">
 
         <header></header>
 
@@ -59,7 +337,36 @@
     <script src="js/bootstrap.js"></script>
     <script src="baza.js"></script>
     <script src="menu.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js"></script> -->
+
+
+    <section id="root">
+        <div>
+            <h1>Sayt üzərində texniki işlər gedir.</h1>
+            <a href = "tel:+994703100911">070 310 09 11</a>
+        </div>
+        <div class=`main-back`>
+            <div class="back-child"></div>
+            <div class="back-child"></div>
+            <div class="back-child"></div>
+            <div class="back-child"></div>
+             <div class="back-child"></div>
+            <div class="back-child"></div>
+            <div class="back-child"></div>
+            <div class="back-child"></div>
+             <div class="back-child"></div>
+            <div class="back-child"></div>
+            <div class="back-child"></div>
+            <div class="back-child"></div>
+             <div class="back-child"></div>
+            <div class="back-child"></div>
+            <div class="back-child"></div>
+            <div class="back-child"></div>
+            <div class="back-child"></div>
+            <div class="back-child"></div> 
+        </div>
+    </section>
+    
 </body>
 
 </html>
